@@ -1,0 +1,17 @@
+<!-- todo: is there any way to use ng-if instead (issue is that I need to select the video/source element in they are not ready if I use ng-if) -->
+<div class="content">
+  <div ng-show="activeItem.type === 'video'">
+    <video controls ng-mouseenter="showControls = true" ng-mouseleave="showControls = false">
+      <!-- the javascript will insert the attribute for the video source -->
+      <source />
+      Your browser does not support the <code>video</code> element.
+    </video>
+    <div class="controls" ng-show="showControls">custom controls</div>
+  </div>
+  <div ng-if="activeItem.type === 'assessment'">
+    <div class="" ng-include="activeItem.meta.path"></div>
+  </div>
+</div>
+<ol class="playlist">
+  <li ng-repeat="(key, item) in options.items" ng-click="playlistItemClick($event, key)" ng-class="{'is-active': activeItemIndex == key}">{{ item.name }} - {{ item.type }}</li>
+</ol>
