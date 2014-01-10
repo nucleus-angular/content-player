@@ -1,0 +1,33 @@
+<div>Assessment 2</div>
+<form name="assessment">
+  <ul>
+    <li>
+      <label>
+        <span>1 + 1 = </span>
+        <input type="text" name="one" ng-model="assessmentModel.four"/>
+      </label>
+    </li>
+    <li>
+      <label>
+        <span>2 + 2 = </span>
+        <input type="radio" name="two" value="2" ng-model="assessmentModel.five"/> 2
+        <input type="radio" name="two" value="4" ng-model="assessmentModel.five"/> 4
+        <input type="radio" name="two" value="6" ng-model="assessmentModel.five"/> 6
+      </label>
+    </li>
+    <li>
+      <label>
+        <span>3 * 3 = </span>
+        <select name="three" ng-model="assessmentModel.six">
+          <option value="">-----</option>
+          <option value="3">3</option>
+          <option value="9">9</option>
+          <option value="15">15</option>
+        </select>
+      </label>
+    </li>
+    <li>
+      <button ng-click="assessmentComplete()">Submit</button>
+    </li>
+  </ul>
+</form>

@@ -1,17 +1,45 @@
 <!-- todo: is there any way to use ng-if instead (issue is that I need to select the video/source element in they are not ready if I use ng-if) -->
 <div class="content">
   <div ng-show="activeItem.type === 'video'">
-    <video controls ng-mouseenter="showControls = true" ng-mouseleave="showControls = false">
+    <video ng-mouseenter="showControls = true" ng-mouseleave="showControls = false">
       <!-- the javascript will insert the attribute for the video source -->
       <source />
       Your browser does not support the <code>video</code> element.
     </video>
-    <div class="controls" ng-show="showControls">custom controls</div>
+    <div class="controls" ng-mouseenter="showControls = true" ng-mouseleave="showControls = false">
+      <button class="toggle-play" ng-click="togglePlay()">
+        <span ng-class="{'nag-icon-font-play': !isPlaying(), 'nag-icon-font-pause': isPlaying()}"></span>
+      </button>
+      <button class="reload" ng-click="reloadItem()">
+        <span class="nag-icon-font-reload"></span>
+      </button>
+      <button class="backward" ng-click="loadPreviousItem()">
+        <span class="nag-icon-font-backward"></span>
+      </button>
+      <button class="forward" ng-click="loadNextItem()">
+        <span class="nag-icon-font-forward"></span>
+      </button>
+      <span class="progress progress-bar" ng-mouseup="progressBarMouseUp($event)">
+        <span class="hover-time"></span>
+        <span class="current-loaded indicator"></span>
+        <span class="current-progress indicator"></span>
+      </span>
+      <span class="time"></span>
+      <span class="volume">
+        <span class="nag-icon-font-volume-{{ getVolumeLevel() }}"></span>
+        <span class="progress-bar" ng-mouseup="volumeBarMouseUp($event)">
+          <span class="indicator">&nbsp;</span>
+        </span>
+      </span>
+      <button class="full-screen" nag-attribute="{'disabled': !fullscreenAvailable()}" ng-click="fullscreen()">
+        <span ng-class="{'nag-icon-font-expand': !isFullscreen(), 'nag-icon-font-contract': isFullscreen()}"></span>
+      </button>
+    </div>
   </div>
   <div ng-if="activeItem.type === 'assessment'">
     <div class="" ng-include="activeItem.meta.path"></div>
   </div>
 </div>
-<ol class="playlist">
-  <li ng-repeat="(key, item) in options.items" ng-click="playlistItemClick($event, key)" ng-class="{'is-active': activeItemIndex == key}">{{ item.name }} - {{ item.type }}</li>
-</ol>
+<ul class="playlist">
+  <li ng-repeat="(key, item) in options.items" class="item" ng-click="playlistItemClick($event, key)" ng-class="{'is-active': activeItemIndex == key}"><span class="nag-icon-font-{{ item.type }}"></span>({{ key }}){{ item.name }}</li>
+</ul>

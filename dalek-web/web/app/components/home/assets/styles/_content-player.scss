@@ -1,0 +1,9 @@
+.content-player {
+  @include clearfix();
+  height: 491px;
+  width: 783px;
+
+  .playlist {
+    max-height: 100px;
+  }
+}

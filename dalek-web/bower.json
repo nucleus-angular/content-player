@@ -1,0 +1,9 @@
+{
+  "name": "angular-seed",
+  "version": "0.2.0",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "angular-mockable-http-provider": "master"
+  }
+}

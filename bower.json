@@ -2,12 +2,19 @@
   "name": "nucleus-angular-content-player",
   "version": "0.0.0",
   "dependencies": {
-    "nucleus-angular-core": "master"
+    "nucleus-angular-core": "master",
+    "screenfull": "1.1.0",
+    "nucleus-angular-attribute": "master"
   },
   "devDependencies": {
-    "angular-mockable-http-provider": "master",
     "jquery": "1.10.x",
+    "moment": "2.0.0",
+    "modernizr": "2.6.2",
     "lodash": "1.2.1",
-    "unstable-angular-complete": "1.2.0rc3"
+    "unstable-angular-complete": "1.2.0rc3",
+    "angular-ui-router": "0.2.0",
+    "nucleus-angular-content-player": "master",
+    "nucleus-angular-sass-framework": "master",
+    "angular-mockable-http-provider": "master"
   }
 }

@@ -1,0 +1,96 @@
+{
+  "workingFiles": {
+    "web/app/styles/main.css": {
+      "fileHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "compiledFilePath": "web/app/build/2f0e7296623918e05f72c4e32c8627f04e1469e6-main.css"
+    },
+    "web/components/modernizr/modernizr.js": {
+      "fileHash": "e3b3781915beff5af126254d4c935b1e5a83ef38",
+      "compiledFilePath": "web/app/build/1e722dc6e04086c5200df8286a088fb3636a6875-libraries.js"
+    },
+    "web/components/moment/moment.js": {
+      "fileHash": "eb4adec77825f18b2e6e8c3aa65f84feecafd2fd",
+      "compiledFilePath": "web/app/build/1e722dc6e04086c5200df8286a088fb3636a6875-libraries.js"
+    },
+    "web/components/lodash/dist/lodash.js": {
+      "fileHash": "6882a238523ed570425be36198400aa66119662f",
+      "compiledFilePath": "web/app/build/592dbe1566db0b211fa28d48e599f01f544b40c9-libraries.js"
+    },
+    "web/components/jquery/jquery.js": {
+      "fileHash": "37fc3e651159cf6b9353a3f6f3bfe6e5e63e0092",
+      "compiledFilePath": "web/app/build/1e722dc6e04086c5200df8286a088fb3636a6875-libraries.js"
+    },
+    "web/components/angular/angular.js": {
+      "fileHash": "b8b9b7f468a6d8abc0646c5bbd0de3fb8224dff2",
+      "compiledFilePath": "web/app/build/1e722dc6e04086c5200df8286a088fb3636a6875-libraries.js"
+    },
+    "web/components/angular-ui-router/src/common.js": {
+      "fileHash": "29ce0462fe631171d592b87f76c00f7a29ef4d56",
+      "compiledFilePath": "web/app/build/1e722dc6e04086c5200df8286a088fb3636a6875-libraries.js"
+    },
+    "web/components/angular-ui-router/src/templateFactory.js": {
+      "fileHash": "f5e83a865287057713315eb81e3e3c797fd79034",
+      "compiledFilePath": "web/app/build/1e722dc6e04086c5200df8286a088fb3636a6875-libraries.js"
+    },
+    "web/components/angular-ui-router/src/urlMatcherFactory.js": {
+      "fileHash": "523209234411af14e0aabb1d3e6800bf0b333c63",
+      "compiledFilePath": "web/app/build/1e722dc6e04086c5200df8286a088fb3636a6875-libraries.js"
+    },
+    "web/components/angular-ui-router/src/urlRouter.js": {
+      "fileHash": "68850cb9ccb891c17d6cd0ea7b755f0dc2e501db",
+      "compiledFilePath": "web/app/build/1e722dc6e04086c5200df8286a088fb3636a6875-libraries.js"
+    },
+    "web/components/angular-ui-router/src/state.js": {
+      "fileHash": "d3fd3d37ce782923bcb076e76fb07904341a0c37",
+      "compiledFilePath": "web/app/build/1e722dc6e04086c5200df8286a088fb3636a6875-libraries.js"
+    },
+    "web/components/angular-ui-router/src/viewDirective.js": {
+      "fileHash": "219e33f301ca15bf771bb68df127209e6f620291",
+      "compiledFilePath": "web/app/build/1e722dc6e04086c5200df8286a088fb3636a6875-libraries.js"
+    },
+    "web/components/angular-ui-router/src/compat.js": {
+      "fileHash": "35b78907cd362d75141f67c25196a1dfddb14175",
+      "compiledFilePath": "web/app/build/1e722dc6e04086c5200df8286a088fb3636a6875-libraries.js"
+    },
+    "web/app/application.js": {
+      "fileHash": "715f602f4e9d3296c04a8509ce3f369ba7b93c08",
+      "compiledFilePath": "web/app/build/7032dd3c2c333dd56cd32cfcd120fa15bf71e955-application.js"
+    },
+    "web/app/components/core/module.js": {
+      "fileHash": "f1f0787f8fd5fb503cabb7d41f911c951e19b6db",
+      "compiledFilePath": "web/app/build/7032dd3c2c333dd56cd32cfcd120fa15bf71e955-application.js"
+    },
+    "web/app/components/home/module.js": {
+      "fileHash": "d8678190ff85fd36f8bce4dfb0524d24246c31c6",
+      "compiledFilePath": "web/app/build/7032dd3c2c333dd56cd32cfcd120fa15bf71e955-application.js"
+    },
+    "web/app/components/home/home.js": {
+      "fileHash": "cebf717c6586d64db25fd9094f005ec46739f73f",
+      "compiledFilePath": "web/app/build/7032dd3c2c333dd56cd32cfcd120fa15bf71e955-application.js"
+    }
+  },
+  "buildFiles": {
+    "main.css": [
+      "web/app/styles/main.css"
+    ],
+    "libraries.js": [
+      "web/components/modernizr/modernizr.js",
+      "web/components/moment/moment.js",
+      "web/components/jquery/jquery.js",
+      "web/components/angular/angular.js",
+      "web/components/angular-ui-router/src/common.js",
+      "web/components/angular-ui-router/src/templateFactory.js",
+      "web/components/angular-ui-router/src/urlMatcherFactory.js",
+      "web/components/angular-ui-router/src/urlRouter.js",
+      "web/components/angular-ui-router/src/state.js",
+      "web/components/angular-ui-router/src/viewDirective.js",
+      "web/components/angular-ui-router/src/compat.js"
+    ],
+    "application.js": [
+      "web/app/application.js",
+      "web/app/components/core/module.js",
+      "web/app/components/home/module.js",
+      "web/app/components/home/home.js"
+    ]
+  }
+}
